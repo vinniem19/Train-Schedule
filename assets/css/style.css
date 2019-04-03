@@ -1,0 +1,24 @@
+body {
+    background:lightblue;
+}
+
+.jumbotron-fluid {
+    background: maroon;
+    margin: 30px 50px;
+    
+
+}
+
+.display-4 {
+    color: white;
+}
+
+.lead {
+    color: white;
+}
+
+.card {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom:50px;
+}
