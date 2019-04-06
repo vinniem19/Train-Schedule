@@ -1,95 +1,122 @@
 <!doctype html>
 <html lang="en">
-  <head>
-      <title>Train Schedule</title>
-      <meta>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="assets/css/style.css">
-  </head>
+
+<head>
+        <title>Train Schedule</title>
+        <meta>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
 <body>
-    <div class="wrapper">
-        <!--Jumbotron-->
-        <div class="row">
-            <div class="col-md-12">
-                    <div class="jumbotron jumbotron-fluid">
-                        <div class="container">
-                            <h1 class="display-4">Anytime is Train Time</h1>
-                            <p class="lead">Choo. Choo. Chee. Chee.</p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-
-        <!--Top Card for Current Schedule-->
-        <div class="row">
-                <div class="col-md-12">
-                        <div class="card">
-                                <div class="card-header">
-                                  Current Train Schedule
-                                </div>
-                                <div class="card-body">
-                                  
-                                </div>
-                              </div>
-
-
-                </div>
-        </div>
-
-        <!--Bottom Card for Add Train Input-->
-        <div class="row">
-                <div class="col-md-12">
-                        <div class="card">
-                                <div class="card-header">
-                                  Add Train
-                                </div>
-                                <div class="card-body">
-                                    <form>
-                                        <div class="form-group">
-                                                <label for="name">Train Name</label>
-                                                <input type="text" class="form-control" id="train-name-input">
+        <div class="wrapper">
+                <!--Jumbotron-->
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="jumbotron jumbotron-fluid">
+                                        <div class="container">
+                                                <h1 class="text-center">Anytime is Train Time</h1>
+                                                <p class="text-center">Choo. Choo. Chee. Chee.</p>
                                         </div>
-                                              <div class="form-group">
-                                                <label for="destination">Destination</label>
-                                                <input type="text" class="form-control" id="destination-input" placeholder="city">
-                                    </div>
-
-                                    <div class="form-group">
-                                            <label for="name">First Train Time</label>
-                                            <input type="text" class="form-control" id="first-train-time-input">
-                                    </div>
-
-                                    <div class="form-group">
-                                            <label for="name">Frequency (minutes)</label>
-                                            <input type="text" class="form-control" id="frequency-input">
-                                    </div>
-                                    <!--need to change the href place here-->
-                                  <a href="#" class="btn btn-success">Submit</a>
-                                  </form>
                                 </div>
-                              </div>
-
-
+                        </div>
                 </div>
+
+                <!--Top Card for Current Schedule-->
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="card">
+                                        <div class="card-header">
+                                                Current Train Schedule
+                                        </div>
+                                        <div class="card-body">
+                                                <table class="table">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th scope="col">Name</th>
+                                                                        <th scope="col">Destination</th>
+                                                                        <th scope="col">Frequency</th>
+                                                                        <th scope="col">Next Train Arrival</th>                                                                        </th>
+                                                                        <th scope="col">Minutes Away</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+
+                                                                        
+                                                                </tr>
+                                                               
+                                                        </tbody>
+                                                </table>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                </div>
+
+                <!--Bottom Card for Add Train Input-->
+                <div class="row">
+                        <div class="col-md-12">
+                                <div class="card">
+                                        <div class="card-header">
+                                                Add Train
+                                        </div>
+                                        <div class="card-body">
+                                                <form>
+                                                        <div class="form-group">
+                                                                <label for="train-name-input">Train Name</label>
+                                                                <input type="text" class="form-control"
+                                                                        id="train-name-input">
+                                                        </div>
+                                                        <div class="form-group">
+                                                                <label for="destination-input">Destination</label>
+                                                                <input type="text" class="form-control"
+                                                                        id="destination-input" placeholder="city">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                                <label for="first-tr-input">First Train Time</label>
+                                                                <input type="text" class="form-control"
+                                                                        id="first-tr-input">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                                <label for="frequency-input">Frequency (minutes)</label>
+                                                                <input type="text" class="form-control"
+                                                                        id="frequency-input">
+                                                        </div>
+                                                        <!--need to change the href place here-->
+                                                        <a href="#" class="btn btn-success">Submit</a>
+                                                </form>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                </div>
+
+
+
+
+
         </div>
 
 
 
 
-   
-    </div>
-   
-   
-   
-   
-   
-   
-   
-   
-   
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    </body>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="assets/Javascript/moment.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="assets/Javascript/train.js"></script>
+
+</body>
 
 </html>
