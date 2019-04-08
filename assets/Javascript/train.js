@@ -58,6 +58,7 @@ database.ref().on("child_added", function (childSnapshot) {
     console.log(typeof trainInfo.trainName);
     frequency = trainInfo.frequency;
     console.log(frequency);
+    destination = trainInfo.destination;
 
 
     //working with moment.js
@@ -96,8 +97,7 @@ var minutesTillNextTrain = $("<td>");
     minutesTillNextTrain.text(tMinutesTilNextTrain);
 
     var nextTrainArrives = $("<td>");
-    nextTrainArrives.text(now.add(tMinutesTilNextTrain));
-
+    nextTrainArrives.text(now.add(tMinutesTilNextTrain, "m").format("hh:mm"));
 
     $("tbody").append("<tr>").append(newDataName).append(newDataDest).append(newDataFreq).append(nextTrainArrives).append(minutesTillNextTrain);// + trainInfo.trainName + "</td>").append("<td>" + trainInfo.destination + "</td>").append("<td>" + trainInfo.frequency + "</td>").append("<td>" + trainInfo.firsttime + "</td>" + "<td></td>");
 
