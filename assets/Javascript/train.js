@@ -56,7 +56,7 @@ $(".btn-success").on("click", function () {
 database.ref().on("child_added", function (childSnapshot) {
     var trainInfo = childSnapshot.val();
     console.log(typeof trainInfo.trainName);
-    frequency = childSnapshot.val().frequency;
+    frequency = trainInfo.frequency;
     console.log(frequency);
 
 
@@ -90,14 +90,16 @@ console.log(firstTimeConverted);
     console.log(tRemainder);
 
   // Minutes until next train
+var minutesTillNextTrain = $("<td>");
   var tMinutesTilNextTrain = frequency - tRemainder;
   console.log("Minutes til next train: " + tMinutesTilNextTrain);
+    minutesTillNextTrain.text(tMinutesTilNextTrain);
 
     var nextTrainArrives = $("<td>");
     nextTrainArrives.text(now.add(tMinutesTilNextTrain));
 
 
-    $("tbody").append("<tr>").append(newDataName).append(newDataDest).append(newDataFreq).append(nextTrainArrives).append(tMinutesTilNextTrain);// + trainInfo.trainName + "</td>").append("<td>" + trainInfo.destination + "</td>").append("<td>" + trainInfo.frequency + "</td>").append("<td>" + trainInfo.firsttime + "</td>" + "<td></td>");
+    $("tbody").append("<tr>").append(newDataName).append(newDataDest).append(newDataFreq).append(nextTrainArrives).append(minutesTillNextTrain);// + trainInfo.trainName + "</td>").append("<td>" + trainInfo.destination + "</td>").append("<td>" + trainInfo.frequency + "</td>").append("<td>" + trainInfo.firsttime + "</td>" + "<td></td>");
 
 
 
