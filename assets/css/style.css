@@ -4,17 +4,32 @@ body {
 
 .jumbotron-fluid {
     background: maroon;
-    margin: 30px 50px;
-    
+    margin: 30px 50px 0;
+    opacity: 50%;
 
 }
 
 .text-center {
-    color: white;
+    color: black;
 }
 
 .card {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom:50px;
+}
+
+#main-title {
+    background-color: white;
+    margin-top: 50px;
+    fill-opacity: inherit;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+     
+}
+
+th {
+    color: green;
+    background: khaki;
 }
